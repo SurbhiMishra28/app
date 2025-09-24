@@ -231,8 +231,8 @@ body {
 }
 
 .btn-secondary:hover {
-  background: var(--brand-primary) !important;
-  color: var(--text-inverse) !important;
+  background: #ffffff !important;
+  color: #000000 !important;
   transform: scale(1.02) !important;
 }
 
