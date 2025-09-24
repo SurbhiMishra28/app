@@ -60,19 +60,19 @@ const Skills = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
-              <Card key={index} className="p-6 bg-page border-border-medium hover:border-white transition-all duration-300 hover:transform hover:scale-105">
+              <Card key={index} className={`p-6 bg-page border-border-medium hover:border-white transition-all duration-300 hover-lift hover-glow animate-fadeInUp animate-delay-${index * 100 + 100}`}>
                 <div className="flex items-center gap-3 mb-6">
-                  <div className={`p-2 rounded-lg bg-secondary-olive ${category.color}`}>
+                  <div className={`p-2 rounded-lg bg-secondary-olive ${category.color} animate-scaleIn animate-delay-${index * 100 + 200}`}>
                     {category.icon}
                   </div>
-                  <h3 className="heading-6 text-primary">{category.title}</h3>
+                  <h3 className="heading-6 text-primary animate-fadeInLeft animate-delay-${index * 100 + 300}">{category.title}</h3>
                 </div>
                 
                 <div className="space-y-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="flex items-center justify-between">
+                    <div key={skillIndex} className={`flex items-center justify-between animate-fadeInRight animate-delay-${(skillIndex * 50) + 400}`}>
                       <span className="body-small text-secondary">{skill}</span>
-                      <div className="w-2 h-2 bg-white rounded-full"></div>
+                      <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                     </div>
                   ))}
                 </div>
