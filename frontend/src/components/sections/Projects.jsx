@@ -45,21 +45,21 @@ const Projects = () => {
 
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
-            {filteredProjects.map((project) => (
-              <Card key={project.id} className="p-6 bg-page border-border-medium hover:border-white transition-all duration-300 hover:transform hover:scale-105">
+            {filteredProjects.map((project, index) => (
+              <Card key={project.id} className={`p-6 bg-page border-border-medium hover:border-white transition-all duration-500 hover-lift hover-glow animate-fadeInUp animate-delay-${index * 200 + 100}`}>
                 <div className="flex flex-col h-full">
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-start justify-between mb-4 animate-slideInDown animate-delay-200">
                     <Badge 
                       variant="secondary" 
-                      className="bg-secondary-olive text-primary"
+                      className="bg-secondary-olive text-primary animate-scaleIn animate-delay-300"
                     >
                       {project.category}
                     </Badge>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 animate-fadeInRight animate-delay-400">
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="p-2 text-secondary hover:text-white"
+                        className="p-2 text-secondary hover:text-white hover-scale"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github size={16} />
@@ -67,7 +67,7 @@ const Projects = () => {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="p-2 text-secondary hover:text-white"
+                        className="p-2 text-secondary hover:text-white hover-scale"
                         onClick={() => window.open(project.liveUrl, '_blank')}
                       >
                         <ExternalLink size={16} />
@@ -75,20 +75,20 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <h3 className="heading-4 text-white mb-3">{project.title}</h3>
+                  <h3 className="heading-4 text-white mb-3 animate-fadeInLeft animate-delay-300">{project.title}</h3>
                   
-                  <p className="body-small text-secondary mb-6 flex-grow">
+                  <p className="body-small text-secondary mb-6 flex-grow animate-fadeIn animate-delay-400">
                     {project.description}
                   </p>
 
                   <div className="space-y-4">
-                    <div>
+                    <div className="animate-fadeInUp animate-delay-500">
                       <h4 className="heading-6 text-primary mb-3">Technologies Used</h4>
                       <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, index) => (
+                        {project.technologies.map((tech, techIndex) => (
                           <span
-                            key={index}
-                            className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full"
+                            key={techIndex}
+                            className={`px-3 py-1 bg-secondary-olive text-primary caption rounded-full hover-scale animate-scaleIn animate-delay-${techIndex * 50 + 600}`}
                           >
                             {tech}
                           </span>
@@ -96,11 +96,11 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    <div className="flex gap-3 pt-4">
+                    <div className="flex gap-3 pt-4 animate-fadeInUp animate-delay-500">
                       <Button
                         variant="outline"
                         size="sm"
-                        className="btn-secondary flex-1"
+                        className="btn-secondary flex-1 hover-lift"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github size={16} className="mr-2" />
@@ -108,7 +108,7 @@ const Projects = () => {
                       </Button>
                       <Button
                         size="sm"
-                        className="btn-primary flex-1"
+                        className="btn-primary flex-1 hover-lift hover-glow"
                         onClick={() => window.open(project.liveUrl, '_blank')}
                       >
                         <ExternalLink size={16} className="mr-2" />
