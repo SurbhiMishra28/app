@@ -27,7 +27,7 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-page/95 backdrop-blur-sm border-b border-border-light z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-primary font-bold text-xl">
+          <div className="text-primary font-bold text-xl hover:text-white transition-colors duration-300 hover-scale">
             Surbhi Mishra
           </div>
           
