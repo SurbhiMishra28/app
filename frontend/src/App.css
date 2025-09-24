@@ -202,7 +202,7 @@ body {
 
 .btn-primary:hover {
   transform: scale(1.02) !important;
-  opacity: 0.9 !important;
+  background: #f0f0f0 !important;
 }
 
 .btn-primary:active {
