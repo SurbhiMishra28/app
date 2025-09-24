@@ -88,17 +88,17 @@ const Contact = () => {
               
               <div className="space-y-6 mb-8">
                 {contactMethods.map((method, index) => (
-                  <Card key={index} className="p-4 bg-page border-border-light hover:border-white transition-all duration-300">
+                  <Card key={index} className={`p-4 bg-page border-border-light hover:border-white transition-all duration-300 hover-lift animate-fadeInLeft animate-delay-${index * 100 + 100}`}>
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center text-white">
+                      <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center text-white hover-scale animate-scaleIn animate-delay-200">
                         {method.icon}
                       </div>
-                      <div className="flex-1">
+                      <div className="flex-1 animate-fadeInRight animate-delay-300">
                         <h4 className="body-medium text-primary mb-1">{method.label}</h4>
                         {method.link ? (
                           <a 
                             href={method.link}
-                            className="body-small text-secondary hover:text-white transition-colors"
+                            className="body-small text-secondary hover:text-white transition-all duration-300 hover-lift"
                           >
                             {method.value}
                           </a>
