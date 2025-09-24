@@ -59,7 +59,7 @@ const Projects = () => {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="p-2 text-secondary hover:text-brand-primary"
+                        className="p-2 text-secondary hover:text-white"
                         onClick={() => window.open(project.githubUrl, '_blank')}
                       >
                         <Github size={16} />
@@ -67,7 +67,7 @@ const Projects = () => {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="p-2 text-secondary hover:text-brand-primary"
+                        className="p-2 text-secondary hover:text-white"
                         onClick={() => window.open(project.liveUrl, '_blank')}
                       >
                         <ExternalLink size={16} />
@@ -75,7 +75,7 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <h3 className="heading-4 text-brand-primary mb-3">{project.title}</h3>
+                  <h3 className="heading-4 text-white mb-3">{project.title}</h3>
                   
                   <p className="body-small text-secondary mb-6 flex-grow">
                     {project.description}
@@ -124,7 +124,7 @@ const Projects = () => {
           {/* Call to Action */}
           <div className="text-center mt-16">
             <Card className="p-8 bg-page border-border-medium max-w-2xl mx-auto">
-              <h3 className="heading-4 text-brand-primary mb-4">More Projects Coming Soon</h3>
+              <h3 className="heading-4 text-white mb-4">More Projects Coming Soon</h3>
               <p className="body-medium text-secondary mb-6">
                 I'm constantly working on new projects and learning emerging technologies. 
                 Follow my GitHub to stay updated with my latest work.
