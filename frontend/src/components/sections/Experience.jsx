@@ -26,7 +26,7 @@ const Experience = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   <div className="lg:flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
-                      <h3 className="heading-4 text-brand-primary">{exp.title}</h3>
+                      <h3 className="heading-4 text-white">{exp.title}</h3>
                       <Badge variant="secondary" className="w-fit bg-secondary-olive text-primary">
                         {exp.company}
                       </Badge>
@@ -44,7 +44,7 @@ const Experience = () => {
                       <ul className="space-y-3">
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start gap-3">
-                            <CheckCircle size={16} className="text-brand-primary mt-1 flex-shrink-0" />
+                            <CheckCircle size={16} className="text-white mt-1 flex-shrink-0" />
                             <span className="body-small text-secondary">{achievement}</span>
                           </li>
                         ))}
@@ -54,19 +54,19 @@ const Experience = () => {
 
                   <div className="lg:w-64">
                     <Card className="p-4 bg-page border-border-light">
-                      <h5 className="heading-6 text-brand-primary mb-3">Impact Highlights</h5>
+                      <h5 className="heading-6 text-white mb-3">Impact Highlights</h5>
                       <div className="space-y-3">
                         <div className="flex justify-between items-center">
                           <span className="caption text-secondary">Performance Improvement</span>
-                          <span className="body-small text-brand-primary font-semibold">20%</span>
+                          <span className="body-small text-white font-semibold">20%</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="caption text-secondary">User Engagement</span>
-                          <span className="body-small text-brand-primary font-semibold">Enhanced</span>
+                          <span className="body-small text-white font-semibold">Enhanced</span>
                         </div>
                         <div className="flex justify-between items-center">
                           <span className="caption text-secondary">API Integration</span>
-                          <span className="body-small text-brand-primary font-semibold">Seamless</span>
+                          <span className="body-small text-white font-semibold">Seamless</span>
                         </div>
                       </div>
                     </Card>
@@ -79,19 +79,19 @@ const Experience = () => {
           {/* Current Status */}
           <Card className="mt-12 p-8 bg-secondary-olive border-border-medium">
             <div className="text-center">
-              <h3 className="heading-4 text-brand-primary mb-4">Currently Available</h3>
+              <h3 className="heading-4 text-white mb-4">Currently Available</h3>
               <p className="body-medium text-primary mb-6">
                 Open to new opportunities in frontend development, full-stack roles, 
                 and AI/ML projects. Looking for internships and entry-level positions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Badge variant="outline" className="border-brand-primary text-brand-primary">
+                <Badge variant="outline" className="border-brand-primary text-white">
                   Frontend Development
                 </Badge>
-                <Badge variant="outline" className="border-brand-primary text-brand-primary">
+                <Badge variant="outline" className="border-brand-primary text-white">
                   Full-Stack Projects
                 </Badge>
-                <Badge variant="outline" className="border-brand-primary text-brand-primary">
+                <Badge variant="outline" className="border-brand-primary text-white">
                   AI/ML Applications
                 </Badge>
               </div>
