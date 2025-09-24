@@ -107,11 +107,11 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="flex justify-center">
+          <div className="flex justify-center animate-pulse">
             <Button
               variant="ghost"
               size="sm"
-              className="text-secondary hover:text-white animate-bounce"
+              className="text-secondary hover:text-white animate-bounce hover-lift"
               onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
             >
               <ArrowDown size={24} />
