@@ -46,21 +46,21 @@ const Hero = () => {
           </p>
 
           {/* Contact Quick Links */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <div className="flex items-center gap-2 text-secondary">
+          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fadeInUp animate-delay-400">
+            <div className="flex items-center gap-2 text-secondary hover-lift">
               <MapPin size={16} />
               <span className="caption">{personal.location}</span>
             </div>
             <a 
               href={`mailto:${personal.email}`}
-              className="flex items-center gap-2 text-secondary hover:text-white transition-colors"
+              className="flex items-center gap-2 text-secondary hover:text-white transition-all duration-300 hover-lift"
             >
               <Mail size={16} />
               <span className="caption">{personal.email}</span>
             </a>
             <a 
               href={`tel:${personal.phone}`}
-              className="flex items-center gap-2 text-secondary hover:text-white transition-colors"
+              className="flex items-center gap-2 text-secondary hover:text-white transition-all duration-300 hover-lift"
             >
               <Phone size={16} />
               <span className="caption">{personal.phone}</span>
@@ -68,11 +68,11 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-4 mb-12">
+          <div className="flex justify-center gap-4 mb-12 animate-fadeInUp animate-delay-500">
             <Button
               variant="outline"
               size="sm"
-              className="btn-secondary"
+              className="btn-secondary hover-lift"
               onClick={() => window.open(personal.linkedin, '_blank')}
             >
               <Linkedin size={16} className="mr-2" />
@@ -81,7 +81,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="sm"
-              className="btn-secondary"
+              className="btn-secondary hover-lift"
               onClick={() => window.open(personal.github, '_blank')}
             >
               <Github size={16} className="mr-2" />
@@ -90,16 +90,16 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-scaleIn animate-delay-500">
             <Button 
-              className="btn-primary"
+              className="btn-primary hover-lift hover-glow"
               onClick={scrollToProjects}
             >
               View My Work
             </Button>
             <Button 
               variant="outline"
-              className="btn-secondary"
+              className="btn-secondary hover-lift"
               onClick={scrollToContact}
             >
               Get In Touch
