@@ -88,7 +88,7 @@ const Contact = () => {
               
               <div className="space-y-6 mb-8">
                 {contactMethods.map((method, index) => (
-                  <Card key={index} className="p-4 bg-page border-border-light hover:border-brand-primary transition-all duration-300">
+                  <Card key={index} className="p-4 bg-page border-border-light hover:border-white transition-all duration-300">
                     <div className="flex items-center gap-4">
                       <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center text-white">
                         {method.icon}
@@ -156,7 +156,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="Your full name"
                         required
-                        className="bg-card border-border-light focus:border-brand-primary"
+                        className="bg-card border-border-light focus:border-white"
                       />
                     </div>
                     <div>
@@ -168,7 +168,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
                         required
-                        className="bg-card border-border-light focus:border-brand-primary"
+                        className="bg-card border-border-light focus:border-white"
                       />
                     </div>
                   </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       placeholder="What's this about?"
                       required
-                      className="bg-card border-border-light focus:border-brand-primary"
+                      className="bg-card border-border-light focus:border-white"
                     />
                   </div>
 
@@ -194,7 +194,7 @@ const Contact = () => {
                       placeholder="Tell me about your project or opportunity..."
                       rows={6}
                       required
-                      className="bg-card border-border-light focus:border-brand-primary resize-none"
+                      className="bg-card border-border-light focus:border-white resize-none"
                     />
                   </div>
 
