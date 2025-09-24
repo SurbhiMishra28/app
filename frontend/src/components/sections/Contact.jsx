@@ -84,13 +84,13 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h3 className="heading-4 text-brand-primary mb-8">Contact Information</h3>
+              <h3 className="heading-4 text-white mb-8">Contact Information</h3>
               
               <div className="space-y-6 mb-8">
                 {contactMethods.map((method, index) => (
                   <Card key={index} className="p-4 bg-page border-border-light hover:border-brand-primary transition-all duration-300">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center text-brand-primary">
+                      <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center text-white">
                         {method.icon}
                       </div>
                       <div className="flex-1">
@@ -98,7 +98,7 @@ const Contact = () => {
                         {method.link ? (
                           <a 
                             href={method.link}
-                            className="body-small text-secondary hover:text-brand-primary transition-colors"
+                            className="body-small text-secondary hover:text-white transition-colors"
                           >
                             {method.value}
                           </a>
@@ -112,7 +112,7 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <h4 className="heading-5 text-brand-primary mb-4">Connect With Me</h4>
+              <h4 className="heading-5 text-white mb-4">Connect With Me</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (
                   <Button
@@ -129,7 +129,7 @@ const Contact = () => {
 
               {/* Availability Status */}
               <Card className="mt-8 p-6 bg-secondary-olive border-border-medium">
-                <h4 className="heading-5 text-brand-primary mb-4">Current Status</h4>
+                <h4 className="heading-5 text-white mb-4">Current Status</h4>
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                   <span className="body-medium text-primary">Available for Opportunities</span>
@@ -143,7 +143,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h3 className="heading-4 text-brand-primary mb-8">Send a Message</h3>
+              <h3 className="heading-4 text-white mb-8">Send a Message</h3>
               
               <Card className="p-6 bg-page border-border-medium">
                 <form onSubmit={handleSubmit} className="space-y-6">
