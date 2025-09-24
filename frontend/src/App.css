@@ -44,7 +44,7 @@
 .border-border-medium { border-color: var(--border-medium); }
 .border-border-strong { border-color: var(--border-strong); }
 
-.text-brand-primary { color: var(--brand-primary); }
+.text-white { color: var(--brand-primary); }
 .bg-white { background-color: var(--brand-primary); }
 
 .text-secondary-olive { color: var(--secondary-olive); }
