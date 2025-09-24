@@ -11,7 +11,7 @@ const Skills = () => {
       title: "Programming Languages",
       icon: <Code size={24} />,
       skills: skills.programming,
-      color: "text-brand-primary"
+      color: "text-white"
     },
     {
       title: "AI/ML Technologies", 
@@ -23,7 +23,7 @@ const Skills = () => {
       title: "Web Development",
       icon: <Wrench size={24} />,
       skills: skills.web,
-      color: "text-brand-primary"
+      color: "text-white"
     },
     {
       title: "Databases",
@@ -35,7 +35,7 @@ const Skills = () => {
       title: "Tools & Platforms",
       icon: <Lightbulb size={24} />,
       skills: skills.tools,
-      color: "text-brand-primary"
+      color: "text-white"
     },
     {
       title: "Soft Skills",
