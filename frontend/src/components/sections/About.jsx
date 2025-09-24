@@ -55,8 +55,8 @@ const About = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center">
-                  <span className="text-page font-bold text-sm">9.0 CGPA</span>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-black font-bold text-sm">9.0 CGPA</span>
                 </div>
               </div>
             </div>
