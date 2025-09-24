@@ -22,7 +22,7 @@ const Experience = () => {
 
           <div className="space-y-8">
             {experience.map((exp, index) => (
-              <Card key={exp.id} className="p-8 bg-card border-border-medium hover:border-brand-primary transition-all duration-300">
+              <Card key={exp.id} className="p-8 bg-card border-border-medium hover:border-white transition-all duration-300">
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                   <div className="lg:flex-1">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
@@ -85,13 +85,13 @@ const Experience = () => {
                 and AI/ML projects. Looking for internships and entry-level positions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Badge variant="outline" className="border-brand-primary text-white">
+                <Badge variant="outline" className="border-white text-white">
                   Frontend Development
                 </Badge>
-                <Badge variant="outline" className="border-brand-primary text-white">
+                <Badge variant="outline" className="border-white text-white">
                   Full-Stack Projects
                 </Badge>
-                <Badge variant="outline" className="border-brand-primary text-white">
+                <Badge variant="outline" className="border-white text-white">
                   AI/ML Applications
                 </Badge>
               </div>
