@@ -63,8 +63,8 @@ const Footer = () => {
               © {currentYear} {personal.name}. All rights reserved.
             </p>
             
-            <p className="body-small text-secondary flex items-center gap-1">
-              Made with <Heart size={14} className="text-brand-primary" /> using React.js
+            <p className="body-small text-secondary">
+              Building the future with code and creativity
             </p>
           </div>
 
