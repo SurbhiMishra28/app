@@ -23,7 +23,7 @@ const Education = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Education Timeline */}
             <div>
-              <h3 className="heading-4 text-brand-primary mb-8 flex items-center gap-3">
+              <h3 className="heading-4 text-white mb-8 flex items-center gap-3">
                 <GraduationCap size={24} />
                 Academic Background
               </h3>
@@ -36,12 +36,12 @@ const Education = () => {
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <h4 className="heading-5 text-primary">{edu.degree}</h4>
-                          <Badge variant="outline" className="border-brand-primary text-brand-primary w-fit">
+                          <Badge variant="outline" className="border-brand-primary text-white w-fit">
                             {edu.duration}
                           </Badge>
                         </div>
                         
-                        <h5 className="body-medium text-brand-primary mb-3">{edu.institution}</h5>
+                        <h5 className="body-medium text-white mb-3">{edu.institution}</h5>
                         
                         <div className="flex items-center gap-4">
                           {edu.cgpa && (
@@ -65,14 +65,14 @@ const Education = () => {
 
               {/* Academic Highlights */}
               <Card className="mt-8 p-6 bg-secondary-olive border-border-medium">
-                <h4 className="heading-5 text-brand-primary mb-4">Academic Highlights</h4>
+                <h4 className="heading-5 text-white mb-4">Academic Highlights</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-brand-primary mb-1">9.0/10</div>
+                    <div className="text-2xl font-bold text-white mb-1">9.0/10</div>
                     <div className="caption text-primary">Current CGPA</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-brand-primary mb-1">2026</div>
+                    <div className="text-2xl font-bold text-white mb-1">2026</div>
                     <div className="caption text-primary">Expected Graduation</div>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const Education = () => {
 
             {/* Certifications */}
             <div>
-              <h3 className="heading-4 text-brand-primary mb-8 flex items-center gap-3">
+              <h3 className="heading-4 text-white mb-8 flex items-center gap-3">
                 <Award size={24} />
                 Professional Certifications
               </h3>
@@ -93,13 +93,13 @@ const Education = () => {
                     <Card key={index} className="p-4 bg-card border-border-light hover:border-brand-primary transition-all duration-300">
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Award size={20} className="text-brand-primary" />
+                          <Award size={20} className="text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="body-medium text-primary mb-1">{title}</h4>
                           <p className="caption text-secondary">Issued by {provider}</p>
                         </div>
-                        <Badge variant="secondary" className="bg-page text-brand-primary">
+                        <Badge variant="secondary" className="bg-page text-white">
                           Verified
                         </Badge>
                       </div>
@@ -110,7 +110,7 @@ const Education = () => {
 
               {/* Certification Stats */}
               <Card className="mt-8 p-6 bg-secondary-olive border-border-medium">
-                <h4 className="heading-5 text-brand-primary mb-4">Certification Portfolio</h4>
+                <h4 className="heading-5 text-white mb-4">Certification Portfolio</h4>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="body-small text-primary">Total Certifications</span>
