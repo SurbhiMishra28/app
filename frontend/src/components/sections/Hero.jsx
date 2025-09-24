@@ -53,14 +53,14 @@ const Hero = () => {
             </div>
             <a 
               href={`mailto:${personal.email}`}
-              className="flex items-center gap-2 text-secondary hover:text-brand-primary transition-colors"
+              className="flex items-center gap-2 text-secondary hover:text-white transition-colors"
             >
               <Mail size={16} />
               <span className="caption">{personal.email}</span>
             </a>
             <a 
               href={`tel:${personal.phone}`}
-              className="flex items-center gap-2 text-secondary hover:text-brand-primary transition-colors"
+              className="flex items-center gap-2 text-secondary hover:text-white transition-colors"
             >
               <Phone size={16} />
               <span className="caption">{personal.phone}</span>
@@ -111,7 +111,7 @@ const Hero = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="text-secondary hover:text-brand-primary animate-bounce"
+              className="text-secondary hover:text-white animate-bounce"
               onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
             >
               <ArrowDown size={24} />
