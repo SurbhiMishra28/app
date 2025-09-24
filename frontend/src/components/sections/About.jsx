@@ -15,7 +15,7 @@ const About = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 lg:order-1">
               <p className="body-medium text-primary mb-6">
                 I'm a passionate B.Tech Computer Science student at Guru Gobind Singh Indraprastha University 
                 with a strong foundation in web development and artificial intelligence.
