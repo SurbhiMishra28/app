@@ -6,7 +6,7 @@ export const portfolioData = {
     email: "surbhim1528@gmail.com",
     phone: "+91 8858050715",
     linkedin: "https://www.linkedin.com/in/surbhi-mishra-904575236",
-    github: "https://github.com/surbhi-mishra", // placeholder
+    github: "https://github.com/SurbhiMishra28",
     bio: "B.Tech Computer Science student at GGSIPU with a passion for creating innovative web solutions and AI-driven applications. Experienced in full-stack development with expertise in React.js, Node.js, and machine learning."
   },
   
