@@ -48,7 +48,7 @@ const About = () => {
 
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="relative">
-                <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl border-2 border-brand-primary">
+                <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl border-2 border-white">
                   <img 
                     src={personal.profileImage} 
                     alt={personal.name}
