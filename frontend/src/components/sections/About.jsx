@@ -46,7 +46,23 @@ const About = () => {
               </div>
             </div>
 
-            <Card className="p-8 bg-card border-border-medium">
+            <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl border-2 border-brand-primary">
+                  <img 
+                    src={personal.profileImage} 
+                    alt={personal.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-brand-primary rounded-full flex items-center justify-center">
+                  <span className="text-page font-bold text-sm">9.0 CGPA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <Card className="mt-12 p-8 bg-card border-border-medium">
               <h3 className="heading-5 text-brand-primary mb-6">Core Competencies</h3>
               
               <div className="space-y-6">
