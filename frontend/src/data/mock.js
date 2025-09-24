@@ -7,6 +7,7 @@ export const portfolioData = {
     phone: "+91 8858050715",
     linkedin: "https://www.linkedin.com/in/surbhi-mishra-904575236",
     github: "https://github.com/SurbhiMishra28",
+    profileImage: "https://customer-assets.emergentagent.com/job_pro-resume-37/artifacts/619ztqi6_picture.jpg",
     bio: "B.Tech Computer Science student at GGSIPU with a passion for creating innovative web solutions and AI-driven applications. Experienced in full-stack development with expertise in React.js, Node.js, and machine learning."
   },
   
