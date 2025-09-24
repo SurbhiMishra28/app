@@ -37,7 +37,7 @@ const Header = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="nav-link text-primary hover:text-brand-primary transition-colors"
+                className="nav-link text-primary hover:text-white transition-colors"
               >
                 {link.label}
               </button>
@@ -62,7 +62,7 @@ const Header = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="block w-full text-left nav-link text-primary hover:text-brand-primary transition-colors py-2"
+                className="block w-full text-left nav-link text-primary hover:text-white transition-colors py-2"
               >
                 {link.label}
               </button>
