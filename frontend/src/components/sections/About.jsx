@@ -34,12 +34,12 @@ const About = () => {
 
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <h4 className="heading-6 text-brand-primary mb-3">Education</h4>
+                  <h4 className="heading-6 text-white mb-3">Education</h4>
                   <p className="caption text-secondary">B.Tech CSE, GGSIPU</p>
                   <p className="caption text-secondary">CGPA: 9.0/10</p>
                 </div>
                 <div>
-                  <h4 className="heading-6 text-brand-primary mb-3">Experience</h4>
+                  <h4 className="heading-6 text-white mb-3">Experience</h4>
                   <p className="caption text-secondary">Frontend Developer</p>
                   <p className="caption text-secondary">Prodesk Intern</p>
                 </div>
@@ -63,7 +63,7 @@ const About = () => {
           </div>
 
           <Card className="mt-12 p-8 bg-card border-border-medium">
-            <h3 className="heading-5 text-brand-primary mb-6">Core Competencies</h3>
+            <h3 className="heading-5 text-white mb-6">Core Competencies</h3>
             
             <div className="space-y-6">
               <div>
