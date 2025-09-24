@@ -31,7 +31,7 @@ export const portfolioData = {
       description: "ML-based system recommending crops using soil, climate, and yield data. Achieved 92% accuracy with Random Forest after hyperparameter tuning.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Machine Learning"],
       category: "AI/ML",
-      githubUrl: "#", // placeholder
+      githubUrl: "https://github.com/SurbhiMishra28",
       liveUrl: "#" // placeholder
     },
     {
@@ -40,7 +40,7 @@ export const portfolioData = {
       description: "Full-stack shopping platform with authentication and product filtering. Integrated secure payment gateway and optimized database queries.",
       technologies: ["React.js", "Node.js", "Express", "MongoDB"],
       category: "Full Stack",
-      githubUrl: "#", // placeholder
+      githubUrl: "https://github.com/SurbhiMishra28",
       liveUrl: "#" // placeholder
     },
     {
@@ -49,7 +49,7 @@ export const portfolioData = {
       description: "Personal portfolio showcasing projects and blogs with responsive UI using Flexbox & CSS Grid.",
       technologies: ["HTML", "CSS", "JavaScript"],
       category: "Frontend",
-      githubUrl: "#", // placeholder
+      githubUrl: "https://github.com/SurbhiMishra28",
       liveUrl: "#" // placeholder
     },
     {
@@ -58,7 +58,7 @@ export const portfolioData = {
       description: "Dynamic task management application with CRUD features and local storage for data persistence across sessions.",
       technologies: ["JavaScript", "HTML", "CSS", "Local Storage"],
       category: "Frontend",
-      githubUrl: "#", // placeholder
+      githubUrl: "https://github.com/SurbhiMishra28",
       liveUrl: "#" // placeholder
     }
   ],
