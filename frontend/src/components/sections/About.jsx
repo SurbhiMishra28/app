@@ -11,7 +11,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-6">About Me</h2>
-            <div className="w-20 h-1 bg-brand-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
