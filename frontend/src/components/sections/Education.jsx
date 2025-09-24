@@ -30,13 +30,13 @@ const Education = () => {
               
               <div className="space-y-6">
                 {education.map((edu, index) => (
-                  <Card key={edu.id} className="p-6 bg-card border-border-medium hover:border-brand-primary transition-all duration-300">
+                  <Card key={edu.id} className="p-6 bg-card border-border-medium hover:border-white transition-all duration-300">
                     <div className="flex items-start gap-4">
                       <div className="w-3 h-3 bg-white rounded-full mt-2 flex-shrink-0"></div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <h4 className="heading-5 text-primary">{edu.degree}</h4>
-                          <Badge variant="outline" className="border-brand-primary text-white w-fit">
+                          <Badge variant="outline" className="border-white text-white w-fit">
                             {edu.duration}
                           </Badge>
                         </div>
@@ -90,7 +90,7 @@ const Education = () => {
                 {certifications.map((cert, index) => {
                   const [title, provider] = cert.split(' - ');
                   return (
-                    <Card key={index} className="p-4 bg-card border-border-light hover:border-brand-primary transition-all duration-300">
+                    <Card key={index} className="p-4 bg-card border-border-light hover:border-white transition-all duration-300">
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 bg-secondary-olive rounded-lg flex items-center justify-center flex-shrink-0">
                           <Award size={20} className="text-white" />
