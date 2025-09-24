@@ -13,7 +13,7 @@ const Education = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-6 text-primary">Education & Certifications</h2>
-            <div className="w-20 h-1 bg-brand-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
             <p className="body-medium text-secondary max-w-2xl mx-auto">
               Academic excellence combined with industry-relevant certifications 
               to build a strong foundation in computer science and technology.
@@ -32,7 +32,7 @@ const Education = () => {
                 {education.map((edu, index) => (
                   <Card key={edu.id} className="p-6 bg-card border-border-medium hover:border-brand-primary transition-all duration-300">
                     <div className="flex items-start gap-4">
-                      <div className="w-3 h-3 bg-brand-primary rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="w-3 h-3 bg-white rounded-full mt-2 flex-shrink-0"></div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <h4 className="heading-5 text-primary">{edu.degree}</h4>
@@ -114,14 +114,14 @@ const Education = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span className="body-small text-primary">Total Certifications</span>
-                    <Badge className="bg-brand-primary text-page">{certifications.length}</Badge>
+                    <Badge className="bg-white text-page">{certifications.length}</Badge>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="body-small text-primary">Focus Areas</span>
                     <div className="flex gap-1">
-                      <div className="w-3 h-3 bg-brand-primary rounded-full"></div>
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
                       <div className="w-3 h-3 bg-secondary-yellow rounded-full"></div>
-                      <div className="w-3 h-3 bg-brand-primary rounded-full"></div>
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                   </div>
                   <div className="pt-2">
