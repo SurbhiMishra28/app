@@ -51,7 +51,7 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-6 text-primary">Skills & Technologies</h2>
-            <div className="w-20 h-1 bg-brand-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
             <p className="body-medium text-secondary max-w-2xl mx-auto">
               A comprehensive toolkit spanning programming languages, AI/ML frameworks, 
               web technologies, and essential development tools.
@@ -72,7 +72,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="flex items-center justify-between">
                       <span className="body-small text-secondary">{skill}</span>
-                      <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+                      <div className="w-2 h-2 bg-white rounded-full"></div>
                     </div>
                   ))}
                 </div>
@@ -87,7 +87,7 @@ const Skills = () => {
               {portfolioData.certifications.map((cert, index) => (
                 <Card key={index} className="p-4 bg-page border-border-light">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-brand-primary rounded-full flex-shrink-0"></div>
+                    <div className="w-3 h-3 bg-white rounded-full flex-shrink-0"></div>
                     <p className="body-small text-primary">{cert}</p>
                   </div>
                 </Card>
