@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-brand-primary shadow-lg mb-6">
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-6">
               <img 
                 src={personal.profileImage} 
                 alt={personal.name}
