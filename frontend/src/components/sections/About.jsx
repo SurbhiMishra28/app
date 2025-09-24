@@ -63,44 +63,43 @@ const About = () => {
           </div>
 
           <Card className="mt-12 p-8 bg-card border-border-medium">
-              <h3 className="heading-5 text-brand-primary mb-6">Core Competencies</h3>
-              
-              <div className="space-y-6">
-                <div>
-                  <h4 className="heading-6 text-primary mb-3">Technical Skills</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {[...skills.programming, ...skills.web].slice(0, 6).map((skill, index) => (
-                      <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="heading-6 text-primary mb-3">AI/ML Expertise</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.aiml.slice(0, 4).map((skill, index) => (
-                      <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="heading-6 text-primary mb-3">Soft Skills</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.soft.map((skill, index) => (
-                      <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+            <h3 className="heading-5 text-brand-primary mb-6">Core Competencies</h3>
+            
+            <div className="space-y-6">
+              <div>
+                <h4 className="heading-6 text-primary mb-3">Technical Skills</h4>
+                <div className="flex flex-wrap gap-2">
+                  {[...skills.programming, ...skills.web].slice(0, 6).map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
-            </Card>
-          </div>
+
+              <div>
+                <h4 className="heading-6 text-primary mb-3">AI/ML Expertise</h4>
+                <div className="flex flex-wrap gap-2">
+                  {skills.aiml.slice(0, 4).map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h4 className="heading-6 text-primary mb-3">Soft Skills</h4>
+                <div className="flex flex-wrap gap-2">
+                  {skills.soft.map((skill, index) => (
+                    <span key={index} className="px-3 py-1 bg-secondary-olive text-primary caption rounded-full">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
