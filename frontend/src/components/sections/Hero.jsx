@@ -1,0 +1,115 @@
+import React from "react";
+import { Button } from "../ui/button";
+import { ArrowDown, Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { portfolioData } from "../../data/mock";
+
+const Hero = () => {
+  const { personal } = portfolioData;
+
+  const scrollToContact = () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToProjects = () => {
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section id="hero" className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div className="hero-background">
+        <div className="hero-overlay"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="hero-title mb-6">
+            {personal.name}
+          </h1>
+          
+          <div className="body-large mb-8 max-w-2xl mx-auto">
+            {personal.title}
+          </div>
+          
+          <p className="body-medium text-secondary mb-12 max-w-3xl mx-auto">
+            {personal.bio}
+          </p>
+
+          {/* Contact Quick Links */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <div className="flex items-center gap-2 text-secondary">
+              <MapPin size={16} />
+              <span className="caption">{personal.location}</span>
+            </div>
+            <a 
+              href={`mailto:${personal.email}`}
+              className="flex items-center gap-2 text-secondary hover:text-brand-primary transition-colors"
+            >
+              <Mail size={16} />
+              <span className="caption">{personal.email}</span>
+            </a>
+            <a 
+              href={`tel:${personal.phone}`}
+              className="flex items-center gap-2 text-secondary hover:text-brand-primary transition-colors"
+            >
+              <Phone size={16} />
+              <span className="caption">{personal.phone}</span>
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center gap-4 mb-12">
+            <Button
+              variant="outline"
+              size="sm"
+              className="btn-secondary"
+              onClick={() => window.open(personal.linkedin, '_blank')}
+            >
+              <Linkedin size={16} className="mr-2" />
+              LinkedIn
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="btn-secondary"
+              onClick={() => window.open(personal.github, '_blank')}
+            >
+              <Github size={16} className="mr-2" />
+              GitHub
+            </Button>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button 
+              className="btn-primary"
+              onClick={scrollToProjects}
+            >
+              View My Work
+            </Button>
+            <Button 
+              variant="outline"
+              className="btn-secondary"
+              onClick={scrollToContact}
+            >
+              Get In Touch
+            </Button>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="flex justify-center">
+            <Button
+              variant="ghost"
+              size="sm"
+              className="text-secondary hover:text-brand-primary animate-bounce"
+              onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+            >
+              <ArrowDown size={24} />
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
