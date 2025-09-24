@@ -46,7 +46,7 @@ const Projects = () => {
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {filteredProjects.map((project) => (
-              <Card key={project.id} className="p-6 bg-page border-border-medium hover:border-brand-primary transition-all duration-300 hover:transform hover:scale-105">
+              <Card key={project.id} className="p-6 bg-page border-border-medium hover:border-white transition-all duration-300 hover:transform hover:scale-105">
                 <div className="flex flex-col h-full">
                   <div className="flex items-start justify-between mb-4">
                     <Badge 
