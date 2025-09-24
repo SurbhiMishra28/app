@@ -21,7 +21,7 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-6 text-primary">Featured Projects</h2>
-            <div className="w-20 h-1 bg-brand-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
             <p className="body-medium text-secondary max-w-2xl mx-auto">
               A showcase of innovative solutions spanning AI/ML applications, 
               full-stack web development, and interactive user interfaces.
