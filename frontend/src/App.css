@@ -180,8 +180,8 @@ body {
 
 /* Button Styles */
 .btn-primary {
-  background: var(--brand-primary) !important;
-  color: var(--text-inverse) !important;
+  background: #ffffff !important;
+  color: #000000 !important;
   border: none !important;
   border-radius: 10rem !important;
   padding: 1em 1.5em !important;
