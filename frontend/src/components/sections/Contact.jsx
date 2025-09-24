@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-6 text-primary">Get In Touch</h2>
-            <div className="w-20 h-1 bg-brand-primary mx-auto mb-8"></div>
+            <div className="w-20 h-1 bg-white mx-auto mb-8"></div>
             <p className="body-medium text-secondary max-w-2xl mx-auto">
               Ready to collaborate on exciting projects or discuss opportunities? 
               I'd love to hear from you. Let's build something amazing together!
@@ -131,7 +131,7 @@ const Contact = () => {
               <Card className="mt-8 p-6 bg-secondary-olive border-border-medium">
                 <h4 className="heading-5 text-brand-primary mb-4">Current Status</h4>
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-3 h-3 bg-brand-primary rounded-full animate-pulse"></div>
+                  <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                   <span className="body-medium text-primary">Available for Opportunities</span>
                 </div>
                 <p className="body-small text-secondary">
